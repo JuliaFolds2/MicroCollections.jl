@@ -21,7 +21,7 @@ export EmptyDict,
     vec0,
     vec1
 
-using Setfield: @lens, Setfield
+using Accessors: @optic, Accessors
 
 include("core.jl")
 include("vectors.jl")
