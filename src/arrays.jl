@@ -21,7 +21,7 @@ julia> UndefArray{Int}((2, 3))
 The size of an `UndefArray` can be "changed" by using
 [`Accessors.@set`](https://github.com/JuliaObjects/Accessors.jl)
 
-```jldoctest; setup = :(using MicroCollections)
+```jldoctest; setup = :(using MicroCollections, Accessors)
 julia> using Accessors
 
 julia> x = UndefArray((2,))

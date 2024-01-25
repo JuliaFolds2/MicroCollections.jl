@@ -1,7 +1,7 @@
 # MicroCollections
 
-[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://juliafolds.github.io/MicroCollections.jl/dev)
-[![GitHub Actions](https://github.com/JuliaFolds/MicroCollections.jl/workflows/Run%20tests/badge.svg)](https://github.com/JuliaFolds/MicroCollections.jl/actions?query=workflow%3A%22Run+tests%22)
+[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://juliafolds2.github.io/MicroCollections.jl/dev)
+[![GitHub Actions](https://github.com/JuliaFolds2/MicroCollections.jl/workflows/Run%20tests/badge.svg)](https://github.com/JuliaFolds2/MicroCollections.jl/actions?query=workflow%3A%22Run+tests%22)
 
 MicroCollections.jl provides immutable empty and singleton collections.
 
