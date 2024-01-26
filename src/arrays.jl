@@ -19,10 +19,10 @@ julia> UndefArray{Int}((2, 3))
 ```
 
 The size of an `UndefArray` can be "changed" by using
-[`Setfield.@set`](https://github.com/jw3126/Setfield.jl)
+[`Accessors.@set`](https://github.com/JuliaObjects/Accessors.jl)
 
-```jldoctest; setup = :(using MicroCollections)
-julia> using Setfield
+```jldoctest; setup = :(using MicroCollections, Accessors)
+julia> using Accessors
 
 julia> x = UndefArray((2,))
 2-element UndefVector{Union{}}(2):
@@ -100,7 +100,7 @@ function Base.showarg(io::IO, x::UndefArray, _toplevel::Bool)
     print(io, ')')
 end
 
-function Setfield.set(x::UndefArray, ::typeof(@lens size(_)), dims::Tuple{Vararg{Integer}})
+function Accessors.set(x::UndefArray, ::typeof(@optic size(_)), dims::Tuple{Vararg{Integer}})
     dims = convert(Tuple{Vararg{Int}}, dims)
     return UndefArray{eltype(x)}(dims, x.factory)
 end
